@@ -19,7 +19,7 @@ To install docker in Ubuntu 14.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d -p 8080 quantumobject/docker-tomcat8
+    $ docker run -d -p 8080 quantumobject/docker-tomcat8-complete
 
 with default configuration:
 
@@ -28,7 +28,7 @@ with default configuration:
   
 or you can provide your own value when running the first time:
 
-    $ docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password quantumobject/docker-tomcat8
+    $ docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password quantumobject/docker-tomcat8-complete
 
 or you can change value at file /etc/tomcat8/tomcat-users.xml by
 
@@ -54,7 +54,7 @@ or
 
 Them link to Tomcat8 container
 
-    $ docker run -d -p 8080 --link [some-postgres|some-mysql]:db quantumobject/docker-tomcat8
+    $ docker run -d -p 8080 --link [some-postgres|some-mysql]:db quantumobject/docker-tomcat8-complete
 
 where when been ask for database need to replace localhost for db.
 
